@@ -6,7 +6,7 @@
 
 
     font-family: 'Poppins', sans-serif;
-    font-weight: 200;
+    font-weight: 400;
 }
 
 .page1 {
@@ -23,16 +23,19 @@ header {
     color: white;
 
 
-    font-size: 14px;
+    font-size: 12px;
 
     display: flex;
     align-items: center;
+
+    
 
 }
 
 .headericons {
     display: inline;
-    height: 12px;
+    height: 18px;
+    margin-right: 5px;
 }
 
 .innerHeader1 {
@@ -62,11 +65,30 @@ header ul {
 
 header p {
     display: inline;
+    font-weight: 400;
+
+    cursor: pointer;
 }
 
 header li {
-    margin-left: 50px;
+    margin-left: 10px;
     cursor: pointer;
+    font-weight: 400;
+
+    cursor: pointer;
+
+    transition: 0.2s;
+    padding: 3px 10px;
+    border-radius: 25px;
+
+    display: flex;
+
+   
+}
+
+header li:hover{
+    background-color: rgba(0, 0, 0, 0.105);
+    
 }
 
 .navBar {
@@ -80,7 +102,7 @@ header li {
 
 }
 
-#test {}
+
 
 .navBar ul {
     list-style-type: none;
@@ -95,6 +117,17 @@ header li {
 .navBar li {
     cursor: pointer;
     font-weight: 400;
+
+
+    transition: 0.2s;
+    text-decoration: underline;
+    text-decoration-color: rgb(255, 255, 255);
+    text-underline-offset: 6px;
+    text-decoration-thickness: 2px;
+}
+
+.navBar li:hover{
+    text-decoration-color: pink;
 }
 
 .homeLogo {
@@ -128,12 +161,13 @@ header li {
 
 .title h3 {
     font-size: 28px;
+    font-weight: 200;
 }
 
 /* BOTTOM MENU*/
 
 .Menu {
-    height: 8rem;
+    height: 7rem;
     background-color: rgb(255, 173, 220);
     display: flex;
     justify-content: center;
@@ -141,21 +175,45 @@ header li {
     color: white;
 
     font-size: 12px;
+
+    
 }
 
 .innerMenu li{
     position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    transition: 0.2s;
+}
+
+.innerMenu li:hover{
+    transform: scale(1.2);
 }
 
 .innerMenu{
-    padding: 0;
-    margin: 0;
+    height: 6rem;
+    padding: 0 20px 0 20px;
 }
 
 .arrowIcons{
-    height: 18px;
+    height: 15px;
+    width: 15px;
     padding-right: 25px;
     padding-left: 25px;
+    transition: 0.2s;
+    
+    border-radius: 25px;
+
+    padding: 8px;
+    margin: 0 15px 0 15px;
+    cursor: pointer;
+}
+
+.arrowIcons:hover{
+    background-color: rgba(0, 0, 0, 0.189);
+    
 }
 
 .menuicons {
@@ -163,11 +221,13 @@ header li {
     height: 24px;
     text-align: center;
 
-    z-index: 99;
+    margin-bottom: 2rem;
+
+    /* z-index: 99;
 
     top: 0;
     left: 50%;
-    transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%); */
 }
 
 .Menu ul {
@@ -178,6 +238,7 @@ header li {
 
 .Menu li {
     margin-right: 50px;
+    z-index: 9999999;
 }
 
 .Menu li:last-child {
@@ -201,8 +262,20 @@ header li {
     cursor: pointer;
 }
 
+.innerMenu li{
+
+    transition: 0.2s;
+
+}
+
 .title {
     max-width: 1000px;
+}
+
+.aqui p{
+    font-size: 24px;
+    font-weight: 400;
+    color: rgb(86, 86, 86);
 }
 
 .title button {
@@ -264,7 +337,13 @@ header li {
     font-size: 20px;
 }
 
-.imageGrid img {
+.imageGrid p{
+    cursor: pointer;
+
+    
+}
+
+.imageGrid img{
     width: 100%;
     height: 100%;
     object-fit: cover;
@@ -275,11 +354,12 @@ header li {
     position: relative;
     margin: auto;
 
-    /* aspect-ratio: 16/10; */
+    cursor: pointer;
+
     transition: 0.2s;
 }
 
-.imageGrid img:hover {
+.imageGrid img:hover{
     filter: brightness(100%);
 
 }
