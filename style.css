@@ -27,8 +27,9 @@ header {
 
     display: flex;
     align-items: center;
+    justify-content: center;
 
-    
+
 
 }
 
@@ -42,6 +43,7 @@ header {
     width: 100%;
 
     padding-left: 10rem;
+    text-align: center;
 }
 
 .innerHeader2 {
@@ -83,12 +85,12 @@ header li {
 
     display: flex;
 
-   
+
 }
 
-header li:hover{
+header li:hover {
     background-color: rgba(0, 0, 0, 0.105);
-    
+
 }
 
 .navBar {
@@ -126,7 +128,7 @@ header li:hover{
     text-decoration-thickness: 2px;
 }
 
-.navBar li:hover{
+.navBar li:hover {
     text-decoration-color: pink;
 }
 
@@ -176,34 +178,100 @@ header li:hover{
 
     font-size: 12px;
 
-    
+    margin: 0;
+    padding: 0;
+
+
+
 }
 
-.innerMenu li{
+.Menu div {
     position: relative;
     display: flex;
-    justify-content: center;
+    flex-direction: column;
     align-items: center;
+    justify-content: center;
+
+    vertical-align: middle;
+
+    cursor: pointer;
+
+
 
     transition: 0.2s;
 }
 
-.innerMenu li:hover{
+.Menu div:hover {
     transform: scale(1.2);
 }
 
-.innerMenu{
-    height: 6rem;
-    padding: 0 20px 0 20px;
+.innerMenu li {
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    vertical-align: middle;
+
+    list-style: none;
+    margin-right: 2.5rem;
+    z-index: 9999999;
+
+    transition: 0.2s;
+
 }
 
-.arrowIcons{
+.innerMenu li:last-child {
+    margin-right: 0;
+}
+
+.innerMenu li:hover {
+    transform: scale(1.2);
+}
+
+.innerMenu {
+    width: 550px;
+    height: 100%;
+    padding: 0 20px 0 20px;
+    margin: 0;
+    white-space: nowrap;
+    cursor: pointer;
+
+
+
+    /* padding-top: 2rem;
+    padding-bottom: 2rem; */
+
+    display: flex;
+    /* justify-content: center;
+    align-items: center; */
+
+
+
+
+
+
+    overflow-x: hidden;
+    overflow-y: hidden;
+
+
+}
+
+.innerMenu p {
+    text-align: center;
+}
+
+.break {
+    flex-basis: 100%;
+    height: 0;
+}
+
+.arrowIcons {
     height: 15px;
     width: 15px;
-    padding-right: 25px;
-    padding-left: 25px;
     transition: 0.2s;
-    
+
     border-radius: 25px;
 
     padding: 8px;
@@ -211,46 +279,17 @@ header li:hover{
     cursor: pointer;
 }
 
-.arrowIcons:hover{
+.arrowIcons:hover {
     background-color: rgba(0, 0, 0, 0.189);
-    
+
 }
 
 .menuicons {
-    position: absolute;
     height: 24px;
-    text-align: center;
-
-    margin-bottom: 2rem;
-
-    /* z-index: 99;
-
-    top: 0;
-    left: 50%;
-    transform: translate(-50%, -50%); */
 }
 
-.Menu ul {
-    list-style-type: none;
-    display: flex;
-    padding-top: 10px;
-}
 
-.Menu li {
-    margin-right: 50px;
-    z-index: 9999999;
-}
 
-.Menu li:last-child {
-    margin-right: 0;
-}
-
-.Menu,
-.innerMenu {
-    white-space: nowrap;
-    overflow: hidden;
-
-}
 
 .page1 i {
     height: 45px;
@@ -258,21 +297,17 @@ header li:hover{
     background-color: white;
 }
 
-.innerMenu {
-    cursor: pointer;
-}
-
-.innerMenu li{
+/* .innerMenu li{
 
     transition: 0.2s;
 
-}
+} */
 
 .title {
     max-width: 1000px;
 }
 
-.aqui p{
+.aqui p {
     font-size: 24px;
     font-weight: 400;
     color: rgb(86, 86, 86);
@@ -327,23 +362,24 @@ header li:hover{
     grid-auto-rows: var(--row-height);
     gap: var(--gap);
 
-  
+
 
 }
-.imageGrid div{
+
+.imageGrid div {
     position: relative;
     color: white;
-    
+
     font-size: 20px;
 }
 
-.imageGrid p{
+.imageGrid p {
     cursor: pointer;
 
-    
+
 }
 
-.imageGrid img{
+.imageGrid img {
     width: 100%;
     height: 100%;
     object-fit: cover;
@@ -359,7 +395,7 @@ header li:hover{
     transition: 0.2s;
 }
 
-.imageGrid img:hover{
+.imageGrid img:hover {
     filter: brightness(100%);
 
 }
@@ -387,16 +423,16 @@ header li:hover{
     
 } */
 
-.aqui{
+.aqui {
     display: flex;
 }
 
-.esse{
-    
+.esse {
+
     text-decoration: underline;
     text-decoration-color: pink;
     text-underline-offset: 4px;
-    
+
 }
 
 @media screen and (max-width: 1024px) {
@@ -405,36 +441,43 @@ header li:hover{
         --row-height: 200px;
     }
 
-    .navItems{
+    .navItems {
         display: none;
     }
 
-    .innerHeader2{
+    .innerHeader2 {
         display: none;
     }
+
+    .innerHeader1 {
+    
+        padding-left: 0;
+        text-align: center;
+    }
+    
 
     .title h1 {
         font-size: 32px;
         font-weight: 400;
         line-height: 40px;
     }
-    
+
     .title h3 {
         font-size: 14px;
     }
 
-    .MainContent{
+    .MainContent {
         padding-left: 1rem;
         background-image: url(Images/homepictureMobile.jpg);
         height: 19rem;
 
     }
 
-    .homeLogo{
+    .homeLogo {
         height: 30px;
     }
 
-    .navBar{
+    .navBar {
         height: 4rem;
         margin-top: 2rem;
         padding-bottom: 0;
@@ -453,11 +496,44 @@ header li:hover{
         margin-top: 8px;
     }
 
-    header{
+    header {
         height: 2rem;
     }
 
-    .Menu{
-        height: 5rem;
+    .Menu {
+        height: 3rem;
+    }
+
+    .innerMenu {
+        width: 150px;
+    }
+
+    .innerMenu li{
+        margin-right: 1rem;
+        font-size: 10px;
+    }
+
+    .Menu div {
+        font-size: 10px;
+    }
+
+    .menuicons {
+        height: 20px;
+    }
+
+    .arrowIcons{
+        padding: 0px;
+    }
+    .page1{
+        height: fit-content;
+    }
+
+    .page2{
+        height: fit-content;
+    }
+
+    .aqui p{
+        font-size: 18px;
+        padding-top: 1rem;
     }
 }
