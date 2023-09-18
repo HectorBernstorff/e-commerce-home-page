@@ -1,9 +1,8 @@
+const rightArrow = document.querySelector(".mainPage .Menu .rightArrowIcon");
+const leftArrow = document.querySelector(".mainPage .Menu .leftArrowIcon");
 
-const rightArrow = document.querySelector(".page1 .Menu .rightArrowIcon");
-const leftArrow = document.querySelector(".page1 .Menu .leftArrowIcon");
-
-const rightArrowMobile = document.querySelector(".page1 .Menu .rightArrowIconMobile");
-const leftArrowMobile = document.querySelector(".page1 .Menu .leftArrowIconMobile");
+const rightArrowMobile = document.querySelector(".mainPage .Menu .rightArrowIconMobile");
+const leftArrowMobile = document.querySelector(".mainPage .Menu .leftArrowIconMobile");
 
 const menuList = document.querySelector(".innerMenu");
 
