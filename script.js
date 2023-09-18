@@ -10,7 +10,7 @@ const navPadding = document.querySelector(".MainContent");
 const nav = document.querySelector(".navBar");
 let lastScrollY = window.scrollY;
 
-
+// menu slider functionality
 rightArrow.addEventListener("click", () => {
     menuList.scrollLeft += 208;
 
@@ -31,7 +31,7 @@ leftArrowMobile.addEventListener("click", () => {
 
 });
 
-window.addEventListener("scroll", () => {
+window.addEventListener("scroll", () => {  // navBar hide and show behavior
 
     console.log(lastScrollY);
 
