@@ -115,21 +115,19 @@ header li:hover {
     cursor: pointer;
     font-weight: 400;
     transition: 0.2s;
-    text-decoration: underline;
-    text-decoration-color: rgb(255, 255, 255);
-    text-underline-offset: 6px;
-    text-decoration-thickness: 2px;
+    border-bottom: 3px solid white;
+
+
 }
 
+.innerNavBar li:hover {
+    border-bottom: 3px solid rgb(255, 173, 220);
+    
+}
 .navItemsMobile {
     display: none;
 }
 
-.inneNavBar li:hover {
-    text-decoration-color: pink;
-
-    color: red;
-}
 
 .homeLogo {
     height: 3rem;
@@ -213,6 +211,7 @@ header li:hover {
 
 .tikTokMenu {
     height: 100%;
+    width: 80px;
     white-space: nowrap;
     cursor: pointer;
     display: flex;
@@ -221,6 +220,7 @@ header li:hover {
 }
 
 .tikTokMenu div {
+    width: 100%;
     min-width: 60px;
     list-style: none;
     transition: 0.2s;
