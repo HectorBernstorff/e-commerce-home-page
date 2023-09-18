@@ -11,7 +11,7 @@
 
 .page1 {
     height: 100vh;
-    /* max-height: 100vh; */
+
     display: flex;
     flex-direction: column;
 }
@@ -19,8 +19,9 @@
 /* PAGE TOP*/
 header {
 
-    height: 3rem;
+    height: 2rem;
     background-color: rgb(255, 173, 220);
+
 
 
     z-index: 3;
@@ -40,7 +41,7 @@ header {
     color: white;
 
 
-    font-size: 12px;
+    font-size: 10px;
 
     display: flex;
     align-items: center;
@@ -55,7 +56,7 @@ header {
 
 .headericons {
     display: inline;
-    height: 18px;
+    height: 16px;
     margin-right: 5px;
 }
 
@@ -72,6 +73,8 @@ header {
     /* width: 100%; */
     margin-right: 50px;
     /* display: none; */
+
+
 
 }
 
@@ -97,6 +100,10 @@ header p {
     font-weight: 400;
 
     cursor: pointer;
+
+    display: flex;
+    align-items: center;
+    margin: auto;
 }
 
 header li {
@@ -121,17 +128,17 @@ header li:hover {
 }
 
 .navBar {
-    height: 10rem;
+    height: 8rem;
     padding-left: 50px;
     padding-right: 50px;
     padding-top: 0;
 
     /* margin-top: 2rem; */
 
-/*     
+    /*     
     position: fixed;
     top: 0; */
-/* 
+    /* 
     width: 100%; */
 
     z-index: 2;
@@ -193,13 +200,15 @@ header li:hover {
 
 .homeLogo {
 
-    max-width: 180px;
+    /* max-width: 180px; */
+    height: 3rem;
 }
 
 .icons {
     display: inline;
     margin-left: 2px;
     height: 12px;
+
 }
 
 /* MAIN CONTENT*/
@@ -230,7 +239,9 @@ header li:hover {
 /* BOTTOM MENU*/
 
 .Menu {
-    height: 6rem;
+
+    min-height: 4rem;
+    max-height: 4rem;
     /* max-width: 650px; */
     background-color: rgb(255, 173, 220);
     display: flex;
@@ -238,7 +249,7 @@ header li:hover {
     align-items: center;
     color: white;
     width: 100%;
-    font-size: 12px;
+    font-size: 10px;
 
 
 
@@ -250,13 +261,17 @@ header li:hover {
 
 .innerTikTokMenu {
     height: 100%;
-    max-height: 7rem;
+
     white-space: nowrap;
     cursor: pointer;
-    margin-right: 1rem;
+    /* margin-right: 1rem; */
     display: flex;
     justify-content: center;
     align-items: center;
+
+
+
+
 }
 
 .innerTikTokMenu div {
@@ -267,6 +282,7 @@ header li:hover {
 
     transition: 0.2s;
     text-align: center;
+
 }
 
 .innerTikTokMenu div:hover {
@@ -335,6 +351,7 @@ header li:hover {
     padding: 10px;
     border-radius: 25px;
     cursor: pointer;
+
 }
 
 
@@ -344,7 +361,19 @@ header li:hover {
 
 }
 
-.leftArrowIconMobile,
+.leftArrowIconMobile {
+    display: none;
+
+    height: 20px;
+    width: 20px;
+    transition: 0.2s;
+    padding: 10px;
+    border-radius: 25px;
+    cursor: pointer;
+
+    transform: translateX(+1rem);
+}
+
 .rightArrowIconMobile {
     display: none;
 
@@ -354,10 +383,13 @@ header li:hover {
     padding: 10px;
     border-radius: 25px;
     cursor: pointer;
+
+    transform: translateX(-1rem);
 }
 
 .menuicons {
-    height: 24px;
+    height: 22px;
+    margin-bottom: 4px;
 }
 
 
@@ -377,6 +409,7 @@ header li:hover {
 
 .title {
     max-width: 1000px;
+
 }
 
 .aqui {
@@ -384,7 +417,7 @@ header li:hover {
 }
 
 .aqui p {
-    font-weight: 400;
+    font-weight: 600;
     font-size: 24px;
     color: rgb(86, 86, 86);
 }
@@ -402,6 +435,8 @@ header li:hover {
 
     font-size: 18px;
     font-weight: 400;
+
+    margin-top: 1rem;
 }
 
 .title button:hover {
@@ -514,6 +549,8 @@ header li:hover {
 
 }
 
+
+
 @media screen and (max-width: 1024px) {
     .imageGrid {
         --num-cols: 1;
@@ -602,22 +639,27 @@ header li:hover {
         margin-top: 8px;
     }
 
-    header {
-        height: 2rem;
-    }
-
     .Menu {
-        height: 5rem;
+        min-height: 5rem;
+        max-height: 5rem;
     }
 
     .innerMenu {
         width: 240px;
         gap: 0px;
+
+    }
+
+    .innerMenu li:first-child {
+        width: 0;
     }
 
     .innerMenu li {
 
-        font-size: 12px;
+        font-size: 10px;
+
+        /* min-width: 60px;
+        max-width: 60px; */
 
     }
 
@@ -626,8 +668,9 @@ header li:hover {
     }
 
     .menuicons {
-        height: 26px;
-        padding-bottom: 3px;
+        height: 24px;
+
+
     }
 
     .arrowIcons {
@@ -649,6 +692,8 @@ header li:hover {
     .aqui p {
         font-size: 18px;
         padding-top: 1rem;
+        font-weight: 500;
+        text-transform: uppercase;
     }
 
     .leftArrowIcon,
@@ -659,10 +704,18 @@ header li:hover {
     .leftArrowIconMobile,
     .rightArrowIconMobile {
         display: block;
+
+
     }
 
     .innerTikTokMenu {
         margin-right: 0;
         margin-left: 1rem;
+
+
+    }
+
+    .innerTikTokMenu p {
+        font-size: 10px;
     }
 }
