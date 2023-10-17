@@ -32,8 +32,7 @@ To view the design, open `index.html` in a web browser.
 
 For inquiries or further discussions, please reach out to:
 
-👤 **[Your Name]**
-📧 **[Your Email]**
-🌐 **[Your Portfolio Website]**
+👤 **Hector Bernstorff**
+📧 **hector.hmb@hotmail.com**
 
 Thanks for exploring my e-commerce jewelry homepage design.
