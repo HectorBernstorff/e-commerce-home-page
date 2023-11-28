@@ -1,5 +1,14 @@
 # Jewelry E-Commerce Homepage Design
 
+## Screenshots
+![Home](Home.png)
+
+![HomeBottom](HomeBottom.png)
+
+![MobileHome](MobileHome.png)
+
+![MobileHomeBottom](MobileHomeBottom.png)
+
 ## Introduction
 
 Welcome to my GitHub repository, where I showcase my web design skills with a visually engaging and responsive jewelry e-commerce homepage design.
