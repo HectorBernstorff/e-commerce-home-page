@@ -1,13 +1,13 @@
 # Jewelry E-Commerce Homepage Design
 
 ## Screenshots
-![Home](Home.png)
+![Home](screenshots/Home.png)
 
-![HomeBottom](HomeBottom.png)
+![HomeBottom](screenshots/HomeBottom.png)
 
-![MobileHome](MobileHome.png)
+![MobileHome](screenshots/MobileHome.png)
 
-![MobileHomeBottom](MobileHomeBottom.png)
+![MobileHomeBottom](screenshots/MobileHomeBottom.png)
 
 ## Introduction
 
